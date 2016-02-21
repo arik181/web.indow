@@ -1,0 +1,42 @@
+/*
+Syntax error: Invalid CSS after "}": expected selector or at-rule, was "<<<<<<< HEAD"
+        on line 550 of style.scss
+
+545: }
+546: .matchingColumnHeight{
+547:   padding-bottom:20050px;
+548:   margin-bottom:-20000px;
+549: }
+550: <<<<<<< HEAD
+551: /**************\
+552: |* quick estimate *|
+553: \**************\/
+554: =======
+555: >>>>>>> 64c7dbff99a6a6844334ea823319127bebf0a493
+
+Backtrace:
+style.scss:550
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/scss/parser.rb:1312:in `expected'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/scss/parser.rb:1248:in `expected'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/scss/parser.rb:42:in `parse'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/engine.rb:409:in `_to_tree'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/engine.rb:274:in `render'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/exec.rb:489:in `watch_or_update'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/exec.rb:346:in `process_result'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/exec.rb:43:in `parse'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/lib/sass/exec.rb:22:in `parse!'
+/Users/MyMac/.rvm/gems/ruby-2.1.1@global/gems/sass-3.3.9/bin/scss:13:in `<top (required)>'
+/Users/MyMac/.rvm/rubies/ruby-2.1.1/bin/scss:23:in `load'
+/Users/MyMac/.rvm/rubies/ruby-2.1.1/bin/scss:23:in `<main>'
+/Users/MyMac/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/MyMac/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 550 of style.scss\A \A 545: }\A 546: .matchingColumnHeight{\A 547:   padding-bottom:20050px;\A 548:   margin-bottom:-20000px;\A 549: }\A 550: <<<<<<< HEAD\A 551: /**************\\A 552: |* quick estimate *|\A 553: \**************/\A 554: =======\A 555: >>>>>>> 64c7dbff99a6a6844334ea823319127bebf0a493"; }

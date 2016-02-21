@@ -1,0 +1,17 @@
+{
+    "require": {
+        "fzaninotto/faker": "v1.4.0",
+        "laracasts/utilities": "1.0.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo [WARNING] Delete all .git dirs",
+            "rm -rf vendor/**/**/.git"
+        ],
+        "post-update-cmd": [
+            "echo [WARNING] Delete all .git dirs",
+            "rm -rf vendor/**/**/.git"
+        ]
+    },
+    "minimum-stability": "dev"
+}

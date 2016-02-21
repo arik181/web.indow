@@ -1,0 +1,3 @@
+﻿Customer Track,Order #,Order Status,Quote #,Job Site #,Estimate #,username,Group,No. Windows,Total Sq. Ft.,Order Subtotal,PO#,Order Date,OC Sent Date,OC Received Date,Order Approved Date,Requested Ship Date,Est. Ship Date,Carrier,Tracking Num.,Expedite,Order Notes,Internal Notes,Remake,Deleted,Last Modified,quote created by,estimate created by,dealer indow rep id
+7685,5000,300,1,1,1,rrolls,TEST Channel Partner,3,12.71,$100 ,1,11/12/2014,11/12/2014,11/12/2014,11/12/2014,11/12/2014,12/23/2014,UPS,1z22v92x0345332340,1,varchar,varchar,1,1,11/12/2014,SmithJor,SmithJor,SmithJor
+

@@ -1,0 +1,251 @@
+@import 'colors';
+
+/************************************************
+ *  HEADER
+ ************************************************/
+header {
+  padding: 20px 0 10px 0;
+  .container {
+    border-bottom:2px solid $c1_grey;
+    padding-bottom: 10px;
+    h1{
+      font-size: 20px;
+      padding:4px 6px;
+      margin: 0;
+    }
+    #order_number {
+      span {
+        border: 2px solid $c1_grey;
+        color: $c1_grey;
+        padding:2px 0;
+        font-size: 20px;
+        width:120px;
+        text-align: center;
+      }
+      overflow: hidden;
+      padding-bottom: 14px;
+    }
+    .address {
+      font-size:16px; clear: both;
+    }
+  }
+}
+
+
+/************************************************
+ *  MAIN
+ ************************************************/
+
+main {
+  h2 {
+    font-size: 20px;
+  }
+  .address{
+    ul {
+      font-size: 14px;
+    }
+  }
+  .sig-box {
+    border: 1px solid $c9_grey;
+    .sig-item {
+      overflow: hidden;
+      padding:8px 15px;
+      border: 1px solid $c9_grey;
+      .row { border-top: 1px solid $c9_grey; clear: both; }
+      h2 { margin:0; }
+      .sig-input{ min-height: 40px; float: left; width: 100%; }
+    }
+  }
+  .special_instructions {
+    width: 100%;
+    border: 0px;
+    resize: vertical;
+  }
+
+  .print-label{
+  border: 1px solid $c9_grey;
+  width: 4in;
+  height: 3in; }
+  .order-unit {
+    margin-top: 15px;
+  }
+  .order_number {
+    margin-top: 45px;
+  }
+  .location {
+    font-size: 16px;
+  }
+}
+.barcode {
+    width: 1.25in;
+    height: .5in;
+   /* border: 3px solid #000000; */
+    margin-top: 100px;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+.logo-indow{
+    width: 2in;
+}
+
+#special_instructions         { width: 100%; }
+#special_instructions_heading { border: 2px solid black; min-width: 100%; border-bottom: none; font-weight: bold; }
+#special_instructions_content { border: 2px solid black; min-width: 100%;  min-height: 200px; }
+
+
+.page_cont {
+    page-break-after: always;
+}
+.no_page_break {
+    page-break-inside: avoid;
+}
+ 
+ 
+/************************************************
+ *  FOOTER
+ ************************************************/
+
+
+ 
+ /************************************************
+ *  TRAVELER
+ ************************************************/
+ .box-value {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+.plus_image {
+    width: 110px;
+    height: 110px;
+   /* border: 1px solid red; */
+    position: relative;
+}
+.plus_image.horizontal {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+.plus_image .horiz {
+    border: 1px dashed #000000;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    margin-top: -20%;
+    width: 100%;
+}
+.plus_image .vert {
+    border: 1px solid #000000;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+    width: 40%;
+}
+.content_sep {
+    margin-top: 30px;
+}
+.tubing_cut_dims table, .checklist_table, .opening_dims_table {
+    border-collapse: collapse-all;
+    width: 100%;
+    table-layout: fixed;
+}
+.tubing_cut_dims td, .tubing_cut_dims th, .opening_dims_table th, .opening_dims_table td {
+    border: 1px solid #000000;
+    padding: 4px;
+    text-align: center;
+    height: 30px;
+}
+.checklist_table td {
+    border: 1px solid #000000;
+}
+.checklist_table td, .checklist_table th {
+    height: 30px;
+}
+.checklist_table th {
+    padding-right: 10px;
+    width: 120px;
+}
+.checklist_table td {
+    width: 80px;
+}
+.opening_dims_table th:first-child {
+    width: 100px;
+}
+.large_space {
+    margin-top: 50px;
+}
+.cut_image_cont {
+    width: 355px;
+    height: 303px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.cut_image_cont .force-center {
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+.cut_image_cont svg {
+    margin-top: -230px;
+    margin-left: -102px;
+    -ms-transform: scale(.65,.65); /* IE 9 */
+    -webkit-transform: scale(.65,.65); /* Chrome, Safari, Opera */
+    transform: scale(.65,.65);
+}
+.aspect_ratio_rect {
+    display: none;
+}
+
+ /************************************************
+ *  TUBING
+ ************************************************/
+.order_num_box {
+    padding: 5px;
+    font-weight: bold;
+    border: 3px solid #000000;
+    min-width: 50px;
+    text-align: center;
+}
+.tubing_table {
+    width: 100%;
+}
+.tubing_table td, .tubing_table th {
+    border: 1px solid #000000;
+    padding: 7px;
+    text-align: center;
+    width: 14%;
+}
+.tubing_table td:first-child, .tubing_table th:first-child {
+    border: 2px solid #000000;
+    width: 16%;
+}
+ 
+
+/************************************************
+ *  Sleeve Cut List
+ ************************************************/
+#special_instructions         { width: 100%; }
+#special_instructions_heading { border: 2px solid black; min-width: 100%; border-bottom: none; font-weight: bold; }
+#special_instructions_content { border: 2px solid black; min-width: 100%;  min-height: 200px; }
+
+
+#sleeveTable_wrapper .top,
+#sleeveTable_wrapper .bottom
+{
+    display: none;
+}
+
+
+ 
+  /************************************************
+ *  DISPLAY ON SCREEN BUT DONT PRINT
+ ************************************************/
+@media screen {
+    .page_cont {
+        width: 1000px;
+        margin: 50px auto;
+        border: 2px solid #cccccc;
+        padding: 10px;
+    }
+}

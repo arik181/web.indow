@@ -1,0 +1,1 @@
+<a class="img-responsive" href="<?php echo base_url();?>"><img src="<?php echo base_url('assets/theme/mfmh/img/logo.png');?>"></a>

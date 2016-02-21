@@ -1,0 +1,55 @@
+@import 'colors';
+@import 'mixins';
+// header{line-height:70px;}
+body{font-size:12px;font-family:serif;}
+p{font-family:sans-serif;}
+header{margin:20px 0 10px 0;}
+header h1{margin:0;padding:0;height:100px;width:237px;text-indent:-9999px;background:url("/img/logo.png") no-repeat}
+header nav ul{margin-bottom:0px;}
+h1,h2,h3,h4,h5,h6,a{color:$header_text}
+a{text-decoration:underline;}
+#top_link_nav{text-align:right;font-weight:bold;font-size:13px;}
+#top_link_nav li{border-right:1px solid $header_text;padding-right:10px;padding-left:9px;}
+#top_link_nav li:last-child{border-right:0 none;}
+// #top_link_nav ul li:after{content:"|";margin-left:15px;display:inline-block;}
+// #top_link_nav ul li:last-child:after{content:"";margin:0;}
+
+#tab_nav,#tab_nav ul,#tab_nav ul li,#footer_nav,#footer_nav ul,#footer_nav ul li{margin:0;padding:0;}
+#tab_nav{margin-left:1px;} //optical adjustment for super-faint border.
+#footer_nav{@include vertical-linear-gradient($nav_gradient_highlight_top,$nav_footer_gradient_bot);@include box-shadow(rgba(0,0,0,0.7),15px, 0px, 20px,-10px,inset);}
+footer{margin-bottom:30px;}
+#footer_nav ul li{margin-left:15px;}
+#footer_nav ul li a{display:inline-block;line-height:50px;color:white;text-transform:uppercase;font-family:sans-serif;font-size:9px;text-decoration:none;}
+#tab_nav ul li a{display:inline-block;@include vertical-linear-gradient($nav_gradient_top,$nav_gradient_bot);color:white;padding:3px 10px;border-radius:3px 3px 0 0;@include box-shadow(rgba(0,0,0,0.2),2px, 1px, -1px);text-transform:uppercase;font-family:serif;font-size:12px;text-decoration:none;}
+#tab_nav ul li a:hover,#tab_nav ul li a.alternate:hover,#tab_nav ul li a.selected :hover{@include vertical-linear-gradient($nav_gradient_highlight_top,$nav_gradient_highlight_bot);text-decoration:none}
+#tab_nav ul li a.separated{margin-left:50px;}
+#tab_nav ul li a.alternate{@include vertical-linear-gradient($nav_gradient_alternate_top,$nav_gradient_alternate_bot);}
+.slideshow{background:#9992b3;height:300px; @include box-shadow(rgba(0,0,0,0.7),5px, 0px, 2px,-3px,inset);}
+main{border-left:1px solid $site_border;border-right:1px solid $site_border;border-bottom:1px solid $site_border;overflow:hidden;}
+main p{margin:15px;} //TODO: Temporary, delete this
+#header_blurb{text-align:right;color:$header_text;font-weight:bold;font-size:12px;margin:8px 0;}
+#header_newsletter{margin:10px;}
+#right_facing_triangle{@include triangle(10px,30px,right,$header_text);margin:10px 0 10px 5px;}
+.sidebar_container{z-index:3;}
+main .col-md-4,main .col-md-8{z-index:1}
+.sidebar{z-index:5;background:$background_accent;@extend .matchingColumnHeight;@include box-shadow(rgba(0,0,0,0.2),2px, 1px, -1px);}
+.cms_content h2.cms_title{background:$background_accent;margin:0;line-height:112px;margin-left:-30px;padding-left:45px;z-index:-2}
+/**************\
+|* Extensions *|
+\**************/
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+.matchingColumnHeight{
+  padding-bottom:20050px;
+  margin-bottom:-20000px;
+}
